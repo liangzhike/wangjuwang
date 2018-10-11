@@ -113,10 +113,16 @@
 			</div>
 		</div>
 	</div>
-	<div class="banner">
-		<a class="as1" href="#"></a>
-		<a class="as2" href="#"></a>
-		<a class="as3" href="#"></a>
+	<div class="banner" id="banner">
+		<!-- <a class="as1" id="asb" href="#">
+			<img src="imgs/index/b1.jpg" alt="">
+		</a>
+		<a class="as2" id="asb" href="#">
+			<img src="imgs/index/b2.jpg" alt="">
+		</a>
+		<a class="as3" id="asb" href="#">
+			<img src="imgs/index/b3.jpg" alt="">
+		</a> -->
 	</div>
 	<div class="dongtai">
 		
@@ -733,14 +739,35 @@
 			
 		</div>
 	</div>
+	<div class="gwc">
+		<div class="shang">
+			<a href=""><span>我的购物车</span></a>
+			<a href=""><span>我的优惠券</span></a>
+			<a href=""><span>我的收藏</span></a>
+			<a href=""><span>我的足迹</span></a>
+			<a href=""><span>我要咨询</span></a>
+			<a href=""><span>我要分享</span></a>
+		</div>
+		<div class="xia">
+			<a href=""><span>下载APP</span></a>
+			<a href=""></a>
+		</div>
+	</div>
 </body>
 </html>
+<script type="text/javascript" src="js/jquery-1.8.3.min.js" ></script>
 <script src="js/menu.js"></script> 
+<script src="js/banner.js"></script>
 <script>
 	window.onload=function(){
-		// product();
-		// menu();
+		
+		let s1 = new Slider($("#banner"),1920,500,["imgs/index/b1.jpg","imgs/index/b2.jpg","imgs/index/b3.jpg"],
+				10,"#ccc","red",
+				true,-1,1500);
+		product();
+		menu();
 	}
+
 </script> 
 
 

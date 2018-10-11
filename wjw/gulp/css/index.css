@@ -48,7 +48,7 @@ li{
 	margin-top:13px ;
 	/*height: 12px;*/
 	float: left;
-	padding-left:14px;
+	padding-left:21px;
 	padding-right: 13px;
 	background: url(../imgs/index/ccc.png) no-repeat right center;
 	background-position: -1px 3px;
@@ -188,7 +188,7 @@ li{
 }
 .nav .daohang{	
 	float: left;
-	margin-top: 56px;
+	margin-top: 50px;
 	margin-left: -200px;
 }
 .nav .daohang .box1{
@@ -208,23 +208,23 @@ li{
 }
 .nav .daohang .box1 .box_bb{
 	width: 836px;
-    height: 400px;
+    height: 500px;
     background: red;
     z-index: 10;
     position: absolute;
     left: 0px;
     top: 30px;
-   /* display: none;*/
+    display: none;
 }
 .daohang .box1 .le{
 			width: 165px;
-			height: 400px;
+			height: 500px;
 			background:red;
 			float:left;
 		}
 .daohang .box1 .rt{
 			width: 671px;
-			height: 400px;
+			height: 500px;
 			/*background: pink;*/
 			float: right;
 			position: relative;
@@ -232,7 +232,7 @@ li{
 .daohang .box1 .le a{
 			display: block;
 			width: 165px;
-			height: 67px;
+			height: 84px;
 			background: #f8f8f8;
 			border:1px solid #e4e4e4;
 			box-sizing: border-box;
@@ -264,37 +264,11 @@ li{
     background-position: -4px -586px;
 
 }
-.nav .daohang .box1 .box_bb .le a .spn1{
-	float: left;
-	width: 20px;
-	height: 15px;
-	background:url(../imgs/index/row.jpg) center no-repeat;
-	margin-top: 35px;
-    margin-left: 20px;
-}
-.nav .daohang .box1 .box_bb .le a .spn2{
-	float: right;
-	width: 18px;
-	height: 8px;	
-	margin-top: 37px;
-    margin-right: 14px;
-}
-.nav .daohang .box1 .box_bb .le a .spn1:nth-child(1){
-	background-position: 0px 0px;
-}
 
-
-
-
-
-
-
-
-}
 
 .daohang .box1 .rt .con{
 			width: 671px;
-			height: 400px;
+			height: 500px;
 			display: none;
 			position: absolute;
 			left: 0;
@@ -341,22 +315,29 @@ li{
 
 .banner{
 	width: 100%;
-	height: 400px;
+	height: 500px;
 	background: pink;
 	position: relative;
+	overflow: hidden;
+	border-top:1px solid #a92b69; 
+	border-bottom:1px solid #a92b69; 
 }
+/*
 .banner .as1{
 	display: block;
 	width: 100%;
 	height: 400px;
 	background: url(../imgs/index/b1.jpg);
-	/*display: none;*/
+	display: none;
 }
 .banner .as2{
 	display: block;
 	width: 100%;
 	height: 400px;
 	background: url(../imgs/index/b2.jpg);
+	position: absolute;
+	left: 0px;
+	top:0;
 	display: none;
 }
 .banner .as3{
@@ -364,15 +345,18 @@ li{
 	width: 100%;
 	height: 400px;
 	background: url(../imgs/index/b3.jpg);
+	position: absolute;
+	left: 0px;
+	top:0;
 	display: none;
-}
+}*/
 
-.dongtai{
+/*.dongtai{
 	width: 1200px;
 	height: 80px;
 	background: green;
 	margin: 0 auto;
-}
+}*/
 .content{
 	width: 1200px;
 	
@@ -718,4 +702,104 @@ li{
 .bb_right img{
 	float: left;
 }
+.gwc{
+	width: 42px;
+	height: 100%;
+	opacity: 1;
+	position: fixed;
+	right: 0;
+	top:0;
+	background: #a92b69;
+}
+.gwc .shang{
+	display: inline-block;
+	height: 260px;
+	width: 42px;
+	margin-top: 250px;
+}
+.gwc .xia{
+	display: inline-block;
+	height: 84px;
+	width: 42px;
+	margin-top: 145px;
+}
+.gwc .shang a{
+	display: block;
+	width: 42px;
+	height: 42px;
+	border-bottom:1px solid #a92b69;
+	background:url(../imgs/index/ico-2015-12.png) no-repeat center;
+	position: relative;
+}
+.gwc .shang a span{
+	display: block;
+	width: 128px;
+	height: 42px;
+	background: #a92b69;
+	border-radius: 4px;
+	position:absolute;
+	right: 37px;
+	top:0px;
+	color: white;
+	font-size: 16px;
+	text-align: center;
+	line-height: 42px;
+	display: none;
+}
+.gwc .shang a:hover span{
+	display: block;
+}
 
+
+
+.gwc .xia a{
+	display: block;
+	width: 42px;
+	height: 42px;
+	border-bottom:1px solid #a92b69;
+	background:url(../imgs/index/ico-2015-12.png) no-repeat center;
+	position: relative;
+}
+
+.gwc .xia a span{
+	display: block;
+	width: 150px;
+	height: 150px;
+	text-align: center;
+	color: red;
+	font-weight: 700;
+	border-radius: 4px;
+	position:absolute;
+	right: 37px;
+	top:-71px;
+	background: url(../imgs/index/weixin.png) center;
+	background-size: 150px 150px;
+	display: none;
+}
+.gwc .xia a:hover span{
+	display: block;
+}
+.gwc .shang a:nth-child(1){
+	   background-position: 7px -38px;
+}
+.gwc .shang a:nth-child(2){
+	  background-position: 2px -175px
+}
+.gwc .shang a:nth-child(3){
+	   background-position: 4px -214px;
+}
+.gwc .shang a:nth-child(4){
+	   background-position: 4px -249px;
+}
+.gwc .shang a:nth-child(5){
+	   background-position: 3px -755px;
+}
+.gwc .shang a:nth-child(6){
+	 background-position: 3px -464px;
+}
+.gwc .xia a:nth-child(1){
+	  background-position: 6px -510px;
+}
+.gwc .xia a:nth-child(2){
+	   background-position: 6px -302px;
+}
