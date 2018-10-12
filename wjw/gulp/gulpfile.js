@@ -30,7 +30,9 @@ gulp.task("build",["sass","imgs","js","html"],function(){
 //监听
 gulp.task("watchall",function(){
 	//一旦index.html的内容发生改变，那么就立即执行任务copyHtml;
-	gulp.watch("sass/**/*.scss",["sass"]);
 	gulp.watch("imgs/**/*",["imgs"]);
 	gulp.watch("js/**/*",["js"]);
+	gulp.watch("*.html",["html"]);
+	gulp.watch("css/**/*",["sass"]);
+	
 });

@@ -214,7 +214,6 @@ li{
 .nav .daohang .box1 .box_bb{
 	width: 836px;
     height: 507px;
-    background: red;
     z-index: 10;
     position: absolute;
     left: 0px;
@@ -269,7 +268,6 @@ li{
 .daohang .box1 .le{
 			width: 165px;
 			height: 507px;
-			background:red;
 			float:left;
 		}
 .daohang .box1 .rt{
@@ -345,7 +343,7 @@ li{
 
 .daohang .box1 .rt .con{
 			width: 671px;
-			height: 500px;
+			height: 505px;
 			display: none;
 			position: absolute;
 			left: 0;
