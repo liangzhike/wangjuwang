@@ -756,28 +756,37 @@ li{
 .bb_right img{
 	float: left;
 }
-.gwc{
+.goshopping{
+	width: 333px;
+	height: 300%;
+	background: green;
+	position: fixed;
+	right: -290px;
+	top:0;
+}
+
+
+
+.gp{
 	width: 42px;
 	height: 100%;
 	opacity: 1;
-	position: fixed;
-	right: 0;
-	top:0;
+	
 	background: #a92b69;
 }
-.gwc .shang{
+.gp .shang{
 	display: inline-block;
 	height: 260px;
 	width: 42px;
 	margin-top: 250px;
 }
-.gwc .xia{
+.gp .xia{
 	display: inline-block;
 	height: 84px;
 	width: 42px;
 	margin-top: 145px;
 }
-.gwc .shang a{
+.gp .shang a{
 	display: block;
 	width: 42px;
 	height: 42px;
@@ -785,7 +794,7 @@ li{
 	background:url(../imgs/index/ico-2015-12.png) no-repeat center;
 	position: relative;
 }
-.gwc .shang a span{
+.gp .shang a span{
 	display: block;
 	width: 128px;
 	height: 42px;
@@ -800,13 +809,13 @@ li{
 	line-height: 42px;
 	display: none;
 }
-.gwc .shang a:hover span{
+.gp .shang a:hover span{
 	display: block;
 }
 
 
 
-.gwc .xia a{
+.gp .xia a{
 	display: block;
 	width: 42px;
 	height: 42px;
@@ -815,7 +824,7 @@ li{
 	position: relative;
 }
 
-.gwc .xia a span{
+.gp .xia a span{
 	display: block;
     width: 150px;
     height: 200px;
@@ -830,30 +839,30 @@ li{
     background-size: 150px 200px;
 	display: none;
 }
-.gwc .xia a:hover span{
+.gp .xia a:hover span{
 	display: block;
 }
-.gwc .shang a:nth-child(1){
+.gp .shang a:nth-child(1){
 	   background-position: 7px -38px;
 }
-.gwc .shang a:nth-child(2){
+.gp .shang a:nth-child(2){
 	  background-position: 2px -175px
 }
-.gwc .shang a:nth-child(3){
+.gp .shang a:nth-child(3){
 	   background-position: 4px -214px;
 }
-.gwc .shang a:nth-child(4){
+.gp .shang a:nth-child(4){
 	   background-position: 4px -249px;
 }
-.gwc .shang a:nth-child(5){
+.gp .shang a:nth-child(5){
 	   background-position: 3px -755px;
 }
-.gwc .shang a:nth-child(6){
+.gp .shang a:nth-child(6){
 	 background-position: 3px -464px;
 }
-.gwc .xia a:nth-child(1){
+.gp .xia a:nth-child(1){
 	  background-position: 6px -510px;
 }
-.gwc .xia a:nth-child(2){
+.gp .xia a:nth-child(2){
 	   background-position: 6px -302px;
 }
