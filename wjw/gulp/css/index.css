@@ -513,6 +513,7 @@ li{
 .content_06{
 	width: 1200px;
 	margin-top: 45px;
+	margin-bottom: 40px;
 }
 .content_06 .top{
 	width: 1200px;
@@ -639,7 +640,6 @@ li{
 .footer{
 	width: 100%;
 	border-top: 1px solid #ccc;
-	margin-top: 50px;
 }
 .footer .top{
 	width: 1200px;
@@ -654,7 +654,7 @@ li{
 	margin-top: 50px;
 }
 .top_1:nth-child(1){
-	margin-left: 40px;
+	margin-left: 78px;
 }
 .top_1 img{
 	display: inline-block;
@@ -756,13 +756,16 @@ li{
 .bb_right img{
 	float: left;
 }
+
+/*购物车*/
 .goshopping{
-	width: 333px;
+	width: 323px;
 	height: 300%;
 	background: green;
 	position: fixed;
-	right: -290px;
+	right: -281px;
 	top:0;
+	z-index: 10;
 }
 
 
@@ -770,8 +773,7 @@ li{
 .gp{
 	width: 42px;
 	height: 100%;
-	opacity: 1;
-	
+	opacity: 1;	
 	background: #a92b69;
 }
 .gp .shang{
@@ -829,7 +831,6 @@ li{
     width: 150px;
     height: 200px;
     text-align: center;
-    color: red;
     font-weight: 700;
     border-radius: 4px;
     position: absolute;
@@ -865,4 +866,123 @@ li{
 }
 .gp .xia a:nth-child(2){
 	   background-position: 6px -302px;
+}
+.goshopping .right{
+	width:281px ;
+	height: 100%;
+	background: #f2f2f2;
+	z-index: 20;
+	position: absolute;
+	right: 0;
+	top: 0;
+	
+}
+.goshopping .right .top{
+	width:250px ;
+	height: 48px;
+	margin: 0 auto;
+	margin-top: 20px;
+	background: url(../imgs/index/gw.png) center;
+	background-position: 0px -5px;
+}
+.goshopping .right .top a:nth-child(1){
+	font-size: 14px;
+	color: white;
+	padding-left: 20px;
+	line-height: 48px;
+	
+}
+.goshopping .right .top a:nth-child(2){
+	font-size: 12px;
+	color: white;
+	padding-left: 74px;
+	line-height: 48px;
+	
+}
+.goshopping .right .top a:nth-child(3){
+	display:inline-block;
+	width:11px ;
+	height: 13px;
+	padding-top: 3px;
+	background: url(../imgs/index/sc.png) center;
+	background-position: -21px  424px;
+}
+.goshopping .right .bottom_01 {
+	width: 281px;
+	height: 100px;
+	background: white;
+	margin-top: 584px;
+}
+.goshopping .right .bottom_01  p{
+	display: inline-block;
+	font-size: 13px;
+	color: #c5166e;
+	padding-top: 25px;
+}
+.goshopping .right .bottom_01 p:nth-child(1){
+	
+	padding-left: 26px;
+}
+.goshopping .right .bottom_01 p:nth-child(2){
+	
+	padding-left: 116px;
+}
+.goshopping .right .bottom_01 a{
+	display: block;
+	width: 250px;
+	height: 40px;
+	background:#c5166e ;
+	font-size: 16px;
+	color: white;
+	margin-left: 26px;
+	margin-top: 12px;
+	line-height: 40px;
+	text-align: center;
+}
+.lianjie{
+    width: 28px;
+    height: 200px;
+    border: 1px  solid #ccc;
+    display: none; 
+    position: fixed;  
+    left: 120px;
+    top: 300px;
+    a {
+    	display: block;
+        width: 28px;
+        height: 40px;
+        border-bottom:1px  solid #ccc;
+        background: url(../imgs/index/row.png) center no-repeat;
+       	position: relative;
+      	overflow: hidden;
+        span {
+	    	display: block;
+	        width: 28px;
+	        height: 40px;
+	        background: #A92B69;
+	        font-size: 12px;
+	        color:white;
+	        transition: .5s;
+	        position: absolute;
+	        top: 40px;
+	        left: 0;
+	     }
+    }
+    a:nth-of-type(1){
+    	background-position:0px 0px;
+    }
+     a:nth-of-type(2){
+    	background-position:0px -36px;
+    }
+     a:nth-of-type(3){
+    	background-position:0px -118px;
+    }
+     a:nth-of-type(4){
+    	background-position:0px -158px;
+    }
+    a:nth-of-type(5){
+        border-bottom:none;
+        background-position:0px -279px;
+    }
+    
 }

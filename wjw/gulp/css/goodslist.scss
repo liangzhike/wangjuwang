@@ -1,0 +1,98 @@
+@charset"utf-8";
+.content{
+    width: 100%;
+    background: #fef9db;
+   
+    .cont{
+        width: 1200px;
+        height: 1040px;
+        margin:0 auto;
+        position: relative;
+        .top{
+            width: 1200px;
+            height: 90px;
+            background: url(../imgs/zxg/b1.jpg) center;
+            position: absolute;
+            top: -90px;
+            left: 0px;
+        }
+        .middle{
+            height: 400px;
+            background: url(../imgs/zxg/b2.jpg) center;
+        }
+        .bottom{
+            height: 640px;
+            background: url(../imgs/zxg/b3.jpg) center;
+        }
+    }
+    .cont_01{
+        width: 1200px;
+        height:424px ;
+        margin: 0 auto;
+        margin-top: 16px;
+        .top{
+            height: 60px;
+             background: url(../imgs/zxg/b4.jpg) center;
+        }
+        .bottom{
+            height:364px ;
+            .box1:nth-child(5){
+             margin-right: 0px;
+            }
+            .box1{
+                width: 232px;
+                height: 337px;
+                float: left;
+                margin-top: 27px;
+                text-align: center;
+                margin-right: 10px;
+                background: white;
+                a:nth-of-type(1){
+                    img{
+                        width: 220px;
+                        height: 230px;
+                        margin-top: 10px;
+                    }
+                }
+                 a:nth-of-type(2){
+                     font-size: 14px;
+                     line-height: 20px;
+                     font-weight: 700;  
+                     color: black;             
+                }
+                p:nth-of-type(1){
+                    font-size: 12px;
+                    height: 18px;
+                    line-height: 18px;
+                    color: #666666;
+                }
+                 p:nth-of-type(2){
+                     color: #be1c6a;
+                     float: left;
+                      margin-left: 8px;
+                      margin-top: 15px;
+                     span{
+                         color: #be1c6a;
+                         font-size: 20px;
+                         font-weight: 700;  
+                        
+                     }
+                 }
+                 a:nth-of-type(3){
+                     float:right;
+                     width: 90px;
+                     height: 30px;
+                     background: #be1c6a;
+                     color: white;
+                    line-height: 30px;
+                    width: 90px;
+                    font-size: 14px;
+                    border-radius: 3px;
+                    margin-top: 15px;
+                    margin-right: 10px;
+                 }
+            }
+        }
+        
+    }
+}

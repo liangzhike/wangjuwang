@@ -10,7 +10,7 @@
 		<div class="box">
 			<div class="left">
 				<span>hi~欢迎来到网酒网</span>
-				<a href="#">快速注册 </a>
+				<a href="login.html">快速注册 </a>
 				<a href="#">登录</a>
 				<a href="#">手机网酒网</a>
 			</div>
@@ -76,7 +76,7 @@
 			</div>
 		</div>
 		<div class="right">
-			<a  href="#">
+			<a  href="shopping.html">
 				<h3>加入购物车</h3>
 			</a>
 			<p><span></span></p>
@@ -377,7 +377,7 @@
 				<a href="#">首页</a>
 				<a href="#">名庄臻选</a>
 				<a href="#">限时闪购</a>
-				<a href="#">整箱购</a>
+				<a href="zxg.html">整箱购</a>
 				<a href="#">乐视美酒</a>
 				<a href="#">RVF评分</a>
 			</div>
@@ -418,7 +418,7 @@
 		<div class="content_05">
 			<a href="#"><img src="imgs/index/res.jpg" alt=""></a>
 		</div>
-		<div class="content_06">
+		<div class="content_06" id="cont_01">
 			<div class="top">
 				<div class="left">
 					<h3>葡萄酒</h3>
@@ -546,7 +546,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="content_06">
+		<div class="content_06" id="cont_02">
 			<div class="top">
 				<div class="left">
 					<h3>白酒</h3>
@@ -651,7 +651,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="content_06">
+		<div class="content_06" id="cont_03">
 			<div class="top">
 				<div class="left">
 					<h3>啤酒</h3>
@@ -779,7 +779,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="content_06">
+		<div class="content_06" id="cont_04">
 			<div class="top">
 				<div class="left">
 					<h3>酒具周边</h3>
@@ -1005,33 +1005,52 @@
 		</div>
 	</div>
 	
-	<div class="goshopping">
+	<div class="goshopping" id="goshopping">
 		<div class="gp">
 			<div class="shang">
-				<a href=""><span>我的购物车</span></a>
-				<a href=""><span>我的优惠券</span></a>
-				<a href=""><span>我的收藏</span></a>
-				<a href=""><span>我的足迹</span></a>
-				<a href=""><span>我要咨询</span></a>
-				<a href=""><span>我要分享</span></a>
+				<a href="#" id="wdgwc"><span>我的购物车</span></a>
+				<a href="#"><span>我的优惠券</span></a>
+				<a href="#"><span>我的收藏</span></a>
+				<a href="#"><span>我的足迹</span></a>
+				<a href="#"><span>我要咨询</span></a>
+				<a href="#"><span>我要分享</span></a>
 			</div>
 			<div class="xia">
 				<a href=""><span></span></a>
 				<a href=""></a>
 			</div>
 		</div>
+		<div class="right">
+			<div class="top">
+				<a href="">我的购物车</a>
+				<a href="">清空购物车</a>
+				<a href=""></a>
+			</div>
+			<div class="bottom_01">
+				<p>已选：<span>0</span>件</p>
+				<p>共计:￥<span>0</span></p>
+				<a href="">去购物车结算</a>
+			</div>
+		</div>
 	</div>
 	
-	
+	<div class="lianjie">
+		<a href="javascript:;"><span>葡萄酒区</span></a>		
+		<a href="javascript:;"><span>白酒专区</span></a>		
+		<a href="javascript:;"><span>啤酒专区</span></a>
+		<a href="javascript:;"><span>酒具周边</span></a>	
+		<a href="javascript:;"></a>
+	</div>
 </body>
 </html>
 <script type="text/javascript" src="js/jquery-1.8.3.min.js" ></script>
 <script src="js/menu.js"></script> 
 <script src="js/banner.js"></script>
+<script src="js/lianjie.js"></script>
 <script>
 	window.onload=function(){
 		
-		let s1 = new Slider($("#banner"),1920,500,["imgs/index/b1.jpg","imgs/index/b2.jpg","imgs/index/b3.jpg"],
+		let s1 = new Slider($("#banner"),1550,500,["imgs/index/b0.jpg","imgs/index/b1.jpg","imgs/index/b2.jpg","imgs/index/b3.jpg"],
 				20,"#ccc","#a92b69",
 				true,-1,1500);
 		let s2 = new Slider($("#rightdom1"),210,350,["imgs/index/p2.jpg","imgs/index/p3.jpg","imgs/index/p4.jpg","imgs/index/p5.jpg","imgs/index/p6.jpg"],
@@ -1048,14 +1067,22 @@
 				true,-1,1500);
 		product();
 		menu();
-		
-		
-		
-		
-		
-		
+		lianJie();
+		$("#wdgwc").click(function(){
+			$("#goshopping").animate({
+				right:"0",				
+			});		
+		});
+		$("body *").not("#goshopping,#goshopping *").on("mousedown",function(){
+			if($("#goshopping").css("right")=="0px"){
+				console.log("隐藏");
+					$("#goshopping").animate({
+						right:"-281"
+					});
+			}
+		});		
 	}
-
+	
 </script> 
 
 

@@ -50,7 +50,6 @@ Slider.prototype.createUI= function(){
 			this.$imgs=$img;
 		}else{
 			this.$imgs = this.$imgs.add($img);
-			console.log(this.$imgs);
 		}
 	}
 	

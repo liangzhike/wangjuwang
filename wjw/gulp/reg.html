@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/reg.css">
+</head>
+<body>
+	<div class="header">
+		<div class="right"></div>
+		<div class="left">
+			<span>语言：<a href="">简体中文</a>&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;</span>
+			<span>国家/地区：<a href="">中国</a>&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;</span>
+			<span><a href="">帮助</a></span>
+		</div>		
+	</div>
+	<div class="content">
+			<div class="box">
+				<div class="top">
+					<a href="" class="as1">注册</a>
+					<a href="login.html" class="as2">立即登录</a>		
+				</div>
+				<span id="sp"></span>
+				<div class="for">
+					<input class="inp1" id="phone" type="text" name="phone" placeholder="手机号"/>
+					<input class="inp2" id="password" type="password" name="password" placeholder="密码"/>				
+					<input class="inp3" type="text" placeholder="输入验证，点击更换图片"/>
+					<input type="text" name="" class="yzm" placeholder="6位验证码" />
+					<a href="" class="as1">获取验证码</a>
+					<input class="inp5" type="checkbox" name="" id="" value="" /><span>我已阅读并同意</span>
+					<a href="" class="as2">乐视用户协议</a>
+					<input class="inp4" type="button" id="zhuce" value="注册" />
+					<p id="tishi" style="color: red; display:none ;margin-bottom: 10px"></p>
+				</div>
+				
+			</div>
+	</div>
+</body>
+</html>
+<script type="text/javascript" src="js/reg.js"></script>
+<script src="js/jquery-1.8.3.min.js"></script>
+
+<script>
+	
+	//手机号
+	$(".inp1").blur(function(){
+		if(check($(this).val(),"phone")){
+			$("#sp").html("√").css({
+				color:"green"
+			});			
+		}else{
+			$("#sp").html("请输入正确的电话号码").css({
+				color:"red"
+			});
+		}
+	});
+	//密码
+	$(".inp2").blur(function(){
+		if(check($(this).val(),"password")){
+			$("#sp").html("√").css({
+				color:"green"
+			});			
+		}else{
+			$("#sp").html("请输入正确的格式").css({
+				color:"red"
+			});
+		}
+	});
+	$(".inp3").blur(function(){
+		if(check($(this).val(),"imgs")){
+			$("#sp").html("√").css({
+				color:"green"
+			});			
+		}else{
+			$("#sp").html("请重新输入").css({
+				color:"red"
+			});
+		}
+	});
+	//手机验证吗
+	$(".yzm").blur(function(){
+		if(check($(this).val(),"yzm")){
+			$("#sp").html("√").css({
+				color:"green"
+			});			
+		}else{
+			$("#sp").html("输入不正确，请重新输入").css({
+				color:"red"
+			});
+		}
+	});
+
+	function check(value,name){
+		switch(name){
+			case "phone":
+			var atr=/^1[3-9]\d{9}$/;
+			break;
+			case "password":
+			var atr=/^[0-9a-z@!$%&*#]{8,16}$/i;
+			break;
+			case "imgs":
+			var atr=/^[0-9a-z]{6}$/i;
+			break;
+			case "yzm":
+			var atr=/^[0-9]{6}$/;
+		}
+		return atr.test(value);
+	}
+	
+	reg();
+</script>

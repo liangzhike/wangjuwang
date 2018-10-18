@@ -20,11 +20,13 @@ gulp.task("js",function(){
 gulp.task("html",function(){
 	gulp.src("*.html").pipe(gulp.dest("E:\\phpStudy\\WWW\\wangjiuwang"));
 });
+gulp.task("php",function(){
+	gulp.src("*.php").pipe(gulp.dest("E:\\phpStudy\\WWW\\wangjiuwang"));
+});
 
 
 
-
-gulp.task("build",["sass","imgs","js","html"],function(){
+gulp.task("build",["sass","imgs","js","html","php"],function(){
 	console.log("ok");
 });
 //监听
@@ -34,5 +36,5 @@ gulp.task("watchall",function(){
 	gulp.watch("js/**/*",["js"]);
 	gulp.watch("*.html",["html"]);
 	gulp.watch("css/**/*",["sass"]);
-	
+	gulp.watch("*.php",["php"]);
 });

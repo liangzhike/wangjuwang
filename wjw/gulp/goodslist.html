@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="css/goodslist.css" />
+	</head>
+	<body>
+		<div class="content">
+			<div class="cont_01">
+			<div class="top"></div>	
+			<div class="bottom">
+				<div class="box1">
+					<a href=""><img id="goodsimg" src=""/></a>
+					<a href="" id="goodsname"></a>
+					<p id="goodsdatails"></p>
+					<p >￥<span id="goodsprice">1188.00</span></p>
+					<a href="" id="goodscar"></a>
+				</div>
+				<div class="box1">
+					<a href=""><img src="imgs/zxg/h1.png"/></a>
+					<a href="">坎托雷侯爵仙粉黛红葡萄酒 *6</a>
+					<p>口感饱满 单宁柔和</p>
+					<p>￥<span>1188.00</span></p>
+					<a href="">加入购物车</a>
+				</div>
+				<div class="box1">
+					<a href=""><img src="imgs/zxg/h1.png"/></a>
+					<a href="">坎托雷侯爵仙粉黛红葡萄酒 *6</a>
+					<p>口感饱满 单宁柔和</p>
+					<p>￥<span>1188.00</span></p>
+					<a href="">加入购物车</a>
+				</div>
+				<div class="box1">
+					<a href=""><img src="imgs/zxg/h1.png"/></a>
+					<a href="">坎托雷侯爵仙粉黛红葡萄酒 *6</a>
+					<p>口感饱满 单宁柔和</p>
+					<p>￥<span>1188.00</span></p>
+					<a href="">加入购物车</a>
+				</div>
+				<div class="box1">
+					<a href=""><img src="imgs/zxg/h1.png"/></a>
+					<a href="">坎托雷侯爵仙粉黛红葡萄酒 *6</a>
+					<p>口感饱满 单宁柔和</p>
+					<p>￥<span>1188.00</span></p>
+					<a href="">加入购物车</a>
+				</div>
+			</div>
+		</div>
+		
+		</div>
+		
+	</body>
+</html>
+<script src="js/jquery-1.8.3.min.js"></script>
+<script type="text/javascript">
+
+//var str='';
+//	for(var i=0;i<data.length;i++){
+//		str+="<li>\
+//		<a href='goodsdetail.html'>\
+//			<img goodsid='"+data[i].goodsId+"' src='"+data[i].goodsImg+"' width='225px' height='225px' onclick='goGoodsDetail(this)'>\
+//		</a>\
+//		<p>\
+//			<a href='#'>"+data[i].goodsName+"</a>\
+//		</p>\
+//		<p>￥"+data[i].goodsPrice+"</p>\
+//		<p><span>"+data[i].beiyong1+"</span></p>\
+//	</li>";
+//		$("#one")[0].innerHTML=str;
+//	}
+
+
+//}
+$(function(){
+	$.ajax({
+		type:"get",
+		url:"getGoodsInfo.php",
+		async:true,
+		data:{
+			"goodsId":goodid
+		},
+		success:function(data){
+			$("#goodsimg").attr(imgs/zxg/h1.png);
+			$("#goodsname").html(data.goodsname);
+			$("#goodsdatails").html(data.goodsdatails);
+			$("#goodsprice").html(data.goodsprice);
+			$("#goodscar").html(data.goodscar);			
+		},
+		dataType:"json"
+	});
+});
+
+
+
+
+</script>
